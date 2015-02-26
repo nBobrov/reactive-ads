@@ -1,0 +1,10 @@
+/*bootstrap customization*/
+.navbar {
+    margin-bottom: 0 !important;
+}
+#promo {
+    background-color: #f0ad4e !important;
+}
+#content {
+    margin-top: 20px;
+}
