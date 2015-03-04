@@ -1,4 +1,10 @@
-@(message: String)
+@(categories: List[String], user: Option[User])
 @main("Reactive Ads - The reactive marketplace") {
-    @message
+    @categories.grouped(3).map { group =>
+        <ul>
+            @group.map { item =>
+                <li>@item</li>
+            }
+        </ul>
+    }
 }
